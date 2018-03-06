@@ -1,0 +1,93 @@
+/* 重置代码 */
+@charset "utf-8";
+/* 取消链接高亮  */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article, 
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); }
+/* 设置HTML5元素为块 */
+article, aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section {
+display: block;
+}
+/* 图片自适应 */
+img {
+max-width: 100%;
+height: auto;
+-ms-interpolation-mode:bicubic;/*为了照顾ie图片缩放失真*/
+}
+/* 初始化 */
+html,body,div,p,a,ul,li,img,table,tr,th,td,input,form,label,h1,h2,h3,h4{ margin:0;padding:0;}
+html{ font-size:100px;width:100%;height:100%;overflow-y: auto;overflow-x: hidden;  }
+body{ font-size:12px;font-size:0.12rem;font-family:"Microsoft YaHei","STKaiti";width:100%;height:100%;}
+a{ text-decoration: none;}
+a:hover{ text-decoration: none;}
+h1,h2,h3,h4{ font-weight:bold;}
+ul{ letter-spacing: 0;}
+ul li{ list-style: none;}
+i{ font-style:normal;}
+label{ vertical-align: middle; }
+input{ text-indent: 0.5em;vertical-align: middle;}
+img{ border:none;vertical-align: middle;}
+table{ border-collapse: collapse;table-layout: fixed;}
+table td{ word-break: break-all; word-wrap:break-word;vertical-align:middle;}
+
+::-webkit-input-placeholder { color:#816049; }
+::-moz-placeholder { color:#816049; } /* firefox 19+ */
+:-ms-input-placeholder { color:#816049; } /* ie */
+input:-moz-placeholder { color:#816049; }
+
+/* webkit专用 */
+#field2::-webkit-input-placeholder { color:#00f; }
+#field3::-webkit-input-placeholder { color:#090; background:lightgreen; text-transform:uppercase; }
+#field4::-webkit-input-placeholder { font-style:italic; text-decoration:overline; letter-spacing:3px; color:#999; }
+
+/* mozilla专用 */
+#field2::-moz-placeholder { color:#00f; }
+#field3::-moz-placeholder { color:#090; background:lightgreen; text-transform:uppercase; }
+#field4::-moz-placeholder { font-style:italic; text-decoration:overline; letter-spacing:3px; color:#999; }
+
+/*bg*/
+.bg{ position: relative;width: 100%;/*height: auto;*/overflow:auto;background: #FFFFFF no-repeat center top;background-size: cover;-webkit-background-size: cover;}
+.content{ position: relative;width: 100%;/*height: auto;*/top:0;-webkit-transition:0.2s;transition:0.2s;}
+
+/*mLogin*/
+.m_login{ display:block;position: relative;width: 100%;padding-bottom: 177.89%; background: url(../img/log_bg.jpg) no-repeat center;background-size: 100% 100%;}
+.m_login input{ position: absolute;left: 32%;width: 43%;height: 3%;background-color: transparent;border: none;font-size: 18px;color: white;font-family: Myriad Pro;}
+.m_login .loginButton{ position: absolute;left: 21.7%;top: 67.47%;width: 56.67%;height: 4.87%;background-color: transparent;border: none;font-size: 20px;color: #fdf9f6;font-family: Myriad Pro;text-align: center;}
+ 
+/*mBox*/
+.mBox{ position: relative;width: 100%;height: 20%;}
+
+/*mBox_index*/
+.m_index{ display:none;position: relative;width: 100%;padding-bottom: 177.89%;background: url(../img/index.jpg) no-repeat center;background-size: 100% 100%;}
+.mbtn{ position: absolute;width: 30.67%;height: 22.5%;display: block;}
+.s1{ top: 53.6%;left: 3.33%;}
+.s2{ top: 56%;left: 34%;}
+.s3{ top: 53.6%;left: 65%;}
+
+/*mBox_step*/
+.m_step{ display:none;position: relative;width: 100%;background-size: cover;}
+.m_step input{ background-color: transparent;border: none;}
+.m_step .statename{ position: absolute;top: 3.7%;height: 5.5%;left: 12%;width: 24%;color: white;font-size: 0.12rem;}
+.m_step .stateServer{ top: 3.7%;position: absolute;height: 5.5%;left: 46.67%;width: 14.67%;color: white;font-size: 0.12rem;}
+.m_step .logout{ top: 3.7%;position: absolute;height: 5.5%;left: 65.73%;width: 18.67%;font-family: Myriad Pro;color: #fdf9f6;}
+.m_step span{ font-family: Myriad Pro;color: yellow;text-align: center;display: none;font-size: 0.18rem}
+.role1_img{ background: url(../img/role1.png) no-repeat center top;width: 25.47%;height: 8.13%;position: absolute;top: 8%;left: -1.6%;background-size: cover;}
+.role1_imgc{ background: url(../img/role1_c.png) no-repeat center top;width: 25.47%;height:8.13%;position: absolute;top: 8%;left: -1.6%;background-size: cover;}
+.role1_num{ width: 18%;position: absolute;top: 18%;left: 5.2%;}
+.role2_img{ background: url(../img/role2.png) no-repeat center top;width: 19.067%;height: 8.037%;position: absolute;top: 8.13%;left: 25%;background-size: cover;}
+.role2_imgc{ background: url(../img/role2_c.png) no-repeat center top;width: 19.067%;height: 8.037%;position: absolute;top: 8.13%;left: 25%;background-size: cover;}
+.role2_num{ width: 18%;position: absolute;top: 18%;left: 25.5%;}
+.role3_img{ background: url(../img/role3.png) no-repeat center top;width: 22.267%;height: 7.617%;position: absolute;top: 8.6%;left: 43.6%;background-size: cover;}
+.role3_imgc{ background: url(../img/role3_c.png) no-repeat center top;width: 22.267%;height: 7.617%;position: absolute;top: 8.6%;left: 43.6%;background-size: cover;}
+.role3_num{ width: 18%;position: absolute;top: 18%;left: 47%;}
+.role4_img{ background: url(../img/role4.png) no-repeat center top;width: 19.067%;height: 7.43%;position: absolute;top: 8.82%;left: 67.5%;background-size: cover;}
+.role4_imgc{ background: url(../img/role4_c.png) no-repeat center top;width: 19.067%;height: 7.43%;position: absolute;top: 8.82%;left: 67.7%;background-size: cover;}
+.role4_num{ width: 18%;position: absolute;top: 18%;left: 68.3%;}
+.m_step .vote{ position: absolute;width: 43.6%;height: 3.178%;top: 20.9%;left: 23.62%;display: block;background: url(../img/btn_vote.png) no-repeat center top;background-size: cover;}
+
+.nav{ display:none;background: url(../img/nav.png) no-repeat center top;width: 0.435rem;height: 2.32rem;position: fixed;top: 10%;left: 85%;background-size: cover;}
+.nav a{ width: 100%;height: 20%;display: block;}
+#mstop{ position: relative;width: 100%;padding-bottom: 72%;background: url(../img/step_top.jpg) no-repeat center;background-size: cover;}
+#mstop p{ margin: 2%;}
+#mstep1{ position: relative;width: 100%;padding-bottom: 285.33%;background: url(../img/step_one.jpg) no-repeat center;background-size: cover;}
+#mstep2{ position: relative;width: 100%;padding-bottom: 195.07%;background: url(../img/step_two.jpg) no-repeat center;background-size: cover;}
+#mstep3{position: relative;width: 100%;padding-bottom: 177.73%;background: url(../img/step_three.jpg) no-repeat center;background-size: cover;background-position: 0 -0.01px;}

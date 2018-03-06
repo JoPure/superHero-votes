@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=0,maximum-scale=1.0" />
+		<title>SAH</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body onload="init()">
+		<div class="bg">
+			<div class="content">
+				<div class="m_index">
+					<a class="mbtn s1" href="#mstep1"></a>
+					<a class="mbtn s2" href="#mstep2"></a>
+					<a class="mbtn s3" href="#mstep3"></a>
+				</div>
+				<div class="m_step">
+					<div id="mstop">
+						<div class="statename"><p></p></div>
+						<div class="stateServer"><p></p></div>
+						<input type="submit" class="logout" value="LOGOUT" />
+					</div>
+					<div id="mstep1">
+						<div class="role1_img role1 role" data-check="0" data-role="1"></div><span class="role1_num">?????</span>
+
+						<div class="role2_img role2 role" data-check="0" data-role="2"></div><span class="role2_num">?????</span>
+
+						<div class="role3_img role3 role" data-check="0" data-role="3"></div><span class="role3_num">?????</span>
+
+						<div class="role4_img role4 role" data-check="0" data-role="4"></div><span class="role4_num">?????</span>
+
+						<a class="vote" href="javascript:vote();"></a>
+					</div>
+					<div id="mstep2"></div>
+					<div id="mstep3"></div>
+				</div>
+
+				<div class="m_login">
+					<input id="username" type="text" style="top: 33.4%;" placeholder="Nhập acc" />
+					<input id="password" type="password" style="top: 40.63%;" placeholder="Password" />
+					<input id="gameZone" type="text" style="top: 47.9%;" placeholder="Nhập ID server" onchange="reEdit()" />
+					<input id="playerId" type="text" style="top: 55.2%;" placeholder="Nhập ID nhân vật: ví dụ: vng888888" />
+					<input type="submit" class="loginButton" value="LOGIN" />
+				</div>
+
+				<div class="nav">
+					<a class="nstep1" href="#mstep1"></a>
+					<a class="nstep2" href="#mstep2"></a>
+					<a class="nstep3" href="#mstep3"></a>
+					<a class="nandroid" href="http://bit.ly/1WZDNht" target="_blank"></a>
+					<a class="nios" href="http://goo.gl/loAvIv" target="_blank"></a>
+				</div>
+
+			</div>
+		</div>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+    	<script src="js/md5.js" type="text/javascript"></script>
+	</body>
+
+</html>
